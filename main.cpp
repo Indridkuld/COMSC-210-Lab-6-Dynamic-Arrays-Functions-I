@@ -7,26 +7,32 @@ using namespace std;
 
 // Function prototypes
 
-double enterArrayData();
-int outputArrayData();
-void sumArray(); 
+double enterArrayData(double arr[], int size);
+int outputArrayData(double arr[], int size);
+void sumArray(double arr[], int size);
 
 int main() {
+    const int SIZE = 5;
+    double *ddArr= new double[SIZE];
+    double sum = 0.0;
+
+    enterArrayData(*ddArr);
+
 
     return 0;
 }
 
 // Function definitions
-double enterArrayData() {
+double enterArrayData(double arr[], int size) {
 
     return 0.0;
 }
 
-int outputArrayData() {
+int outputArrayData(double arr[], int size) {
 
     return 0;
 }
 
-void sumArray() {
+void sumArray(double arr[], int size) {
 
 }
