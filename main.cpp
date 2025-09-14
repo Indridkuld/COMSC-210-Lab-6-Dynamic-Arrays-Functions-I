@@ -7,9 +7,9 @@ using namespace std;
 
 // Function prototypes
 
-double enterArrayData(double arr[], const int size);
-int outputArrayData(double arr[], const int size);
-void sumArray(double arr[], const int size);
+void enterArrayData(double arr[], const int size);
+void outputArrayData(double arr[], const int size);
+void sumArray(double arr[], const int size, double &sum);
 
 int main() {
     const int SIZE = 5;
@@ -18,23 +18,27 @@ int main() {
 
     enterArrayData(ddArr, SIZE);
     outputArrayData(ddArr, SIZE);
-    sumArray(ddArr, SIZE);
+    sumArray(ddArr, SIZE, sum);
+    cout << "\n Sum of Values: " << sum << endl;
 
+    delete[] ddArr;
 
     return 0;
 }
 
 // Function definitions
-double enterArrayData(double arr[], const int size) {
-
-    return 0.0;
+void enterArrayData(double arr[], const int size) {
+    for (int i = 0; i < size; i++) {
+        cout << " Enter value for element " << (i + 1) << ": " << endl;
+        cin >> arr[i];
+    }
 }
 
-int outputArrayData(double arr[], const int size) {
+void outputArrayData(double arr[], const int size) {
 
     return 0;
 }
 
-void sumArray(double arr[], const int size) {
+void sumArray(double arr[], const int size, double &sum) {
 
 }
