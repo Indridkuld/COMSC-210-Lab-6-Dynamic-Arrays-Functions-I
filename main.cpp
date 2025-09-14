@@ -17,3 +17,16 @@ int main() {
 }
 
 // Function definitions
+double enterArrayData() {
+
+    return 0.0;
+}
+
+int outputArrayData() {
+
+    return 0;
+}
+
+void sumArray() {
+
+}
