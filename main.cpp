@@ -26,20 +26,21 @@ int main() {
     return 0;
 }
 // Function definitions
-// enters array data through console input using pointers. lists elements from 1-5 for user friendliness
+// enters array data through console input using pointers.
 void enterArrayData(double arr[], const int size) {
-    cout << "Data entry for the array: \n" << endl;
+    cout << "Data entry for the array:" << endl;
     for (int i = 0; i < size; i++) {
-        cout << " Enter value for element " << (i + 1) << ": " << endl;
+        cout << "    > Element #" << i << ": ";
         cin >> *(arr + i);
-    };
-    cout << "Data entry complete. " << endl;
+    }
+    cout << "Data entry complete." << endl;
 }
 // outputs array data using pointers. outputs simple spaced list 
 void outputArrayData(double arr[], const int size) {
     cout << "Outputting array elements: " << endl;
-    for (int i = 0; i < size; i++) // output array using pointers
+    for (int i = 0; i < size; i++) { // output array using pointers
         cout << *(arr + i) << " ";
+    }
     cout << endl;
 }
 // sums array data using pointers. returns sum by reference
