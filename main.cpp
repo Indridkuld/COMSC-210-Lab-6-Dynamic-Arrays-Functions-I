@@ -38,9 +38,9 @@ void enterArrayData(double arr[], const int size) {
 
 void outputArrayData(double arr[], const int size) {
     cout << " Outputting array elements: " << endl;
-    for (int i = 0; i < size; i++) {
-        cout << *(arr + 1) << " ";  
-    }
+    for (int i = 0; i < size; i++) // output array using pointers
+        cout << *(arr + i) << " ";
+    cout << endl;
 }
 
 void sumArray(double arr[], const int size, double &sum) {
