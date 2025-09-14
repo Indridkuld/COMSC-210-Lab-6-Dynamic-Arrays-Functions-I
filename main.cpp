@@ -13,7 +13,8 @@ void sumArray(double arr[], const int size, double &sum);
 
 int main() {
     const int SIZE = 5;
-    double *ddArr= new double[SIZE];
+    double *ddArr = nullptr;
+    ddArr= new double[SIZE];
     double sum = 0.0;
 
     enterArrayData(ddArr, SIZE);
@@ -30,15 +31,20 @@ int main() {
 void enterArrayData(double arr[], const int size) {
     for (int i = 0; i < size; i++) {
         cout << " Enter value for element " << (i + 1) << ": " << endl;
-        cin >> arr[i];
-    }
+        cin >> *(arr + i);
+    };
+    cout << "Data entry complete. " << endl;
 }
 
 void outputArrayData(double arr[], const int size) {
-
-    return 0;
+    cout << " Outputting array elements: " << endl;
+    for (int i = 0; i < size; i++) {
+        cout << *(arr + 1) << " ";  
+    }
 }
 
 void sumArray(double arr[], const int size, double &sum) {
-
+    for (int i = 0; i < size; i++) {
+        sum += *(arr + i);
+    }
 }
