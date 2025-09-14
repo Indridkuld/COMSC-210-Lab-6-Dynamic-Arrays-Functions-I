@@ -37,7 +37,7 @@ void enterArrayData(double arr[], const int size) {
 }
 // outputs array data using pointers. outputs simple spaced list 
 void outputArrayData(double arr[], const int size) {
-    cout << "Outputting array elements: " << endl;
+    cout << "Outputting array elements: ";
     for (int i = 0; i < size; i++) { // output array using pointers
         cout << *(arr + i) << " ";
     }
